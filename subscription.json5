@@ -1,7 +1,7 @@
 {
   id: 1,
   name: "Subscription",
-  version: 1,
+  version: 2,
   author: "cdgeass",
   updateUrl: "https://raw.githubusercontent.com/cdgeass/gkd-subscription/main/subscription.json5",
   checkUpdateUrl: "https://raw.githubusercontent.com/cdgeass/gkd-subscription/main/subscription.json5",
@@ -22,10 +22,12 @@
           rules: [
             '[text="广告"] < * + * > @[text^="跳过"]',
             '[text="广告"] - * < * + * > @[text^="跳过"]',
+            'FrameLayout[childCount=2] +2 * > * + @[text^="跳过"]',
           ],
           snapshotUrls: [
             "https://i.gkd.li/snapshot/1717143540802",
             "https://i.gkd.li/snapshot/1717152252564",
+            "https://i.gkd.li/snapshot/1717580305192",
           ],
         },
       ],
@@ -35,18 +37,18 @@
       name: "微博轻享版",
       groups: [
         {
-	  key: 0,
+	        key: 0,
           name: "开屏广告",
           quickFind: true,
           actionMaximum: 1,
           resetMatch: "app",
-	  rules: [
-	    '[text="广告"] - * < * + * > @[text^="跳过"]',
-	  ]
-	  snapshotUrls: [
-	    "https://i.gkd.li/snapshot/1717396507043",
-	  ]
-	}
+	        rules: [
+	          '[text="广告"] - * < * + * > @[text^="跳过"]',
+	        ]
+	        snapshotUrls: [
+	          "https://i.gkd.li/snapshot/1717396507043",
+	        ]
+	      }
       ]
     }
   ],
