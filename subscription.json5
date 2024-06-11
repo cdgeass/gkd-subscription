@@ -42,8 +42,9 @@
           quickFind: true,
           actionMaximum: 1,
           resetMatch: "app",
+	  activityIds: "com.weico.international.ui.ad.AdActivity"
 	        rules: [
-	          '[text="广告"] - * < * + * > @[text^="跳过"]',
+	          '@[text^="跳过"]',
 	        ]
 	        snapshotUrls: [
 	          "https://i.gkd.li/snapshot/1717396507043",
