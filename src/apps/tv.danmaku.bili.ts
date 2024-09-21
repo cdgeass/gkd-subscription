@@ -15,11 +15,7 @@ export default defineGkdApp({
         '[text="广告"] - * < * + * > @[text^="跳过"]',
         'FrameLayout[childCount=2] +2 * > * + @[text^="跳过"]',
       ],
-      snapshotUrls: [
-        'https://i.gkd.li/snapshot/1717143540802',
-        'https://i.gkd.li/snapshot/1717152252564',
-        'https://i.gkd.li/snapshot/1717580305192',
-      ],
+      snapshotUrls: ['https://i.gkd.li/i/17083418'],
     },
   ],
 });
