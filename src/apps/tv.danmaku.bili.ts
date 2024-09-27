@@ -15,6 +15,7 @@ export default defineGkdApp({
         '[text="广告"] - * < * + * > @[text^="跳过"]',
         '[text="广告"] - * < * -2 * > * + @[text^="跳过"]',
         'TextView[text="立即查看"] - * < * +2 * > * + @[text^="跳过"]',
+        'TextView[text="进入活动页"] - * < * +2 * > * + @[text^="跳过"]',
       ],
       snapshotUrls: [
         'https://i.gkd.li/i/17083419',
