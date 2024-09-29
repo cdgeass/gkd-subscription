@@ -7,10 +7,12 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
+      matchRoot: true,
       fastQuery: true,
       actionMaximum: 1,
+      actionDelay: 300,
       resetMatch: 'app',
-      rules: ['@[id="tv.danmaku.bili:id/count_down"][text^="跳过"]'],
+      rules: ['@[vid="count_down"][text^="跳过"]'],
       snapshotUrls: ['https://i.gkd.li/i/17083419'],
     },
   ],
