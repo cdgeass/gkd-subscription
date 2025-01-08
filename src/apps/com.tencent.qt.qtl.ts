@@ -13,6 +13,6 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: ['[vid="skip_layout"] > @[text$="跳过"]'],
       snapshotUrls: ['https://i.gkd.li/i/18344958'],
-    }
+    },
   ],
 });
