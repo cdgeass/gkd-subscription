@@ -13,6 +13,6 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: ['@[text^="跳过广告"] > [text~="[0-9]*"]'],
       snapshotUrls: ['https://i.gkd.li/i/18344806'],
-    }
+    },
   ],
 });
