@@ -11,7 +11,7 @@ export default defineGkdApp({
       matchRoot: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: ['@[text^="跳过广告"] > [text~="[0-9]*"]'],
+      rules: ['@[text^="跳过广告"]'],
       snapshotUrls: ['https://i.gkd.li/i/18344806'],
     },
   ],
