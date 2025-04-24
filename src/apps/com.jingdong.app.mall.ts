@@ -1,8 +1,8 @@
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
-  id: 'tv.danmaku.bili',
-  name: '哔哩哔哩',
+  id: 'com.jingdong.app.mall',
+  name: '京东',
   groups: [
     {
       key: 0,
@@ -12,8 +12,8 @@ export default defineGkdApp({
       actionMaximum: 1,
       actionDelay: 300,
       resetMatch: 'app',
-      rules: ['@[vid="count_down"][text^="跳过"]'],
-      snapshotUrls: ['https://i.gkd.li/i/17083419'],
+      rules: ['View[desc="启动图广告"] < * + * > @[text^="跳过"]'],
+      snapshotUrls: ['https://i.gkd.li/i/19884786'],
     },
   ],
 });
